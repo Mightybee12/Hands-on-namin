@@ -20,36 +20,34 @@
     </style>
 </head>
 <?php 
-$info = [
-    [
-        "fname" => "MARICAR",
-        "lname" => "DIRE",
-        "age" => "20",
-        "address" => "Taga cainta sa tabi ng kapitbahay namin lot 1, ewan.",
-        "contactno" => "0921tutunog dapat"
-    ],
-    [
-        "fname" => "cJ",
-        "lname" => "DUQUE",
-        "age" => "20",
-        "address" => "ANTIPOLO.",
-        "contactno" => "0921tutunog"
-    ],
-    [
-        "fname" => "ANGELICA",
-        "lname" => "OLEGARIO",
-        "age" => "20",
-        "address" => "CAINTA.",
-        "contactno" => "111111111"
-    ],
-    [
-        "fname" => "TERENCE",
-        "lname" => "ALABAN",
-        "age" => "20",
-        "address" => "TAYTAY.",
-        "contactno" => "0922222222"
-    ]
-];
+$info = 
+    
+        $fname = "MARICAR";
+        $lname = "DIRE";
+        $age = "20";
+        $address ="Taga cainta sa tabi ng kapitbahay namin lot 1, ewan.";
+        $contactno = "0921tutunog dapat";
+    
+    
+        $fname1 = "CJ";
+        $lname1 = "Duque";
+        $age1 = "20";
+        $address1 ="kapitbahay mo ako sir ";
+        $contactno1 = "0921tut";
+    
+        $fname2 = "Angelica";
+        $lname2 = "Olegario";
+        $age2 = "20";
+        $address2 ="kanto lang.";
+        $contactno2 = "09216548";
+    
+        $fname3 = "Terence";
+        $lname3 = "Alaban";
+        $age3 = "20";
+        $address3 ="sasakay ng jeep bago dumating";
+        $contactno3 = "0986436798";
+    
+
 ?>
 <body>
 <h1>Hands-on Activity</h1>
@@ -63,20 +61,35 @@ $info = [
             <th>Address</th>
             <th>Contact Number</th>
         </tr>
+        <tr>
+        <td><?= $fname ?></td>
+        <td><?= $lname ?></td>
+        <td><?= $age ?></td>
+        <td><?= $address ?></td>
+        <td><?= $contactno ?></td>
+        </tr>
+        <tr>
+        <td><?= $fname1 ?></td>
+        <td><?= $lname1 ?></td>
+        <td><?= $age1 ?></td>
+        <td><?= $address1 ?></td>
+        <td><?= $contactno1 ?></td>
+    </tr>
+    <tr>
+        <td><?= $fname2 ?></td>
+        <td><?= $lname2 ?></td>
+        <td><?= $age2 ?></td>
+        <td><?= $address2 ?></td>
+        <td><?= $contactno2?></td>
+        </tr>
+        <tr>
+        <td><?= $fname3 ?></td>
+        <td><?= $lname3 ?></td>
+        <td><?= $age3 ?></td>
+        <td><?= $address3 ?></td>
+        <td><?= $contactno3 ?></td>
+        </tr>
     </thead>
-    <tbody>
-        <?php 
-        foreach ($info as $info) {
-            echo "<tr>";
-            echo "<td>{$info['fname']}</td>";
-            echo "<td>{$info['lname']}</td>";
-            echo "<td>{$info['age']}</td>";
-            echo "<td>{$info['address']}</td>";
-            echo "<td>{$info['contactno']}</td>";
-            echo "</tr>";
-        }
-        ?>
-    </tbody>
 </table>
 
 </body>
